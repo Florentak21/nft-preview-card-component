@@ -1,0 +1,133 @@
+.body {
+    margin: 0;
+    padding: 0;
+    max-width: 1440px;
+    font-family: "Outfit", serif;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.card-container {
+    background-color: hsl(217, 54%, 11%);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.card {
+    width: 20%;
+    padding: 20px;
+    border-radius: 24px;
+    box-shadow: 15px 15px 1px;
+    background-color: hsl(216, 50%, 16%);
+}
+.card-img-container {
+    position: relative;
+    width: 100%;
+}
+
+.card-img img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.hover-effect {
+    display: none;
+    position: absolute;
+    inset: 0;
+    background-color: hsla(178, 100%, 50%, 0.6);
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.card-img-container:hover .hover-effect {
+    display: flex;
+    cursor: pointer;
+}
+
+.first-row h3 {
+    color: hsl(0, 0%, 100%);
+    font-weight: 600;
+}
+
+.first-row h3:hover {
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
+.first-row p {
+    color: hsl(215, 51%, 70%);
+}
+
+.second-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.second-row div:first-of-type {
+    font-weight: 600;
+    color: hsl(178, 100%, 50%);
+}
+
+.second-row div:last-of-type {
+    font-weight: 600;
+    color: hsl(215, 51%, 70%);
+}
+
+.icon {
+    display: flex;
+}
+
+.icon div {
+    margin-right: 10px;
+}
+
+hr {
+    margin: 20px 0;
+}
+
+.third-row {
+    display: flex;
+    align-items: center;
+}
+
+.third-row .avatar-img {
+    width: 40%;
+}
+
+.third-row .avatar-img img {
+    width: 75px;
+    height: 75px;
+}
+
+.third-row .avatar-description {
+    color: hsl(215, 51%, 70%);
+}
+
+.third-row .avatar-description a {
+    color: hsl(0, 0%, 100%);
+    text-decoration: none;
+}
+
+.third-row .avatar-description a:hover {
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
+.attribution {
+    color: hsl(215, 51%, 70%);
+    font-size: 0.9em;
+}
+
+.attribution a {
+    text-decoration: none;
+    color: hsl(0, 0%, 100%);
+}
+
+.attribution a:hover {
+    color: hsla(178, 100%, 50%);
+}
